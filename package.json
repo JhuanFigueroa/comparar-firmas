@@ -1,12 +1,15 @@
 {
-  "name": "react-shop",
+  "homepage": "https://jhuanfigueroa.github.io/comparar-firmas",
+  "name": "comparar-firmas",
   "version": "1.0.0",
   "description": "react shop",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Juan Figueroa",
   "license": "MIT",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.54.7",
     "sass-loader": "^13.0.2",
